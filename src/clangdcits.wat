@@ -1,4 +1,6 @@
 (module $Cit
-        (func $main))
+        (func $_start
+              ))
 
-(export $main, "_start")
+(export i32, "_start")
+;; (export $main, "_start")
