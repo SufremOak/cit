@@ -1,0 +1,19 @@
+[package]
+name = 'cit'
+version = '0.1.0'
+description = 'Description for package cit'
+
+# See more keys and definitions at https://docs.wasmer.io/registry/manifest
+
+[[module]]
+name = 'cit'
+source = 'target/wasm32-wasi/release/cit.wasm'
+abi = 'wasi'
+
+[module.interfaces]
+wasi = '0.1.0-unstable'
+
+[[command]]
+name = 'cit'
+module = 'cit'
+runner = 'wasi'
